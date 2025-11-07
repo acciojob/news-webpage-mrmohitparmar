@@ -1,49 +1,88 @@
-/*  your css code here. If applicable */
-body{
-	background-color:#f5f5f5;
+/* Background color for entire page */
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-.big{
-	display:flex;
-	
-}
-.pictorial-news-section{
-	width:25%;
-	background-color:white;
-	
-}
-.box{
-	width:80%;
-	height:30%;
-	
-}
-img{
-	width:100%;
-	height:100%;
 
+/* Header Section */
+.header {
+  background-color: #011e29;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
 }
-.pictorial-news-section h3{
-	text-align:center;
+
+/* Main container (3-column layout) */
+.big {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
 }
-.main{
-	width:40%;
-	background-color:white;
-	margin:10px;
-	border-radius:10px;
-	padding:10px;
+
+/* Latest News Section */
+.latest-news-section {
+  width: 25%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-.main h2{text-align:center;}
-.latest-news-section{
-	width:25%;
-	
-	background-color:white;
-	height:20%;
-	padding:10px;
-	margin-top:10px;
-	border-radius:10px;
+
+.latest-news-section h3 {
+  text-align: center;
+  margin-bottom: 10px;
 }
-.header{
-	background-color:#011e29;
-	text-align:center;
-	padding:10px;
-	color:white;
+
+.latest-news-section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.latest-news-section li {
+  margin: 6px 0;
+}
+
+/* Main Article Section */
+.main {
+  width: 45%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Pictorial News Section */
+.pictorial-news-section {
+  width: 25%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pictorial-news-section h3 {
+  margin-bottom: 10px;
+}
+
+/* Image Boxes */
+.box {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
 }
